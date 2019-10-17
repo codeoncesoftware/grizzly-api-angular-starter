@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('grizzly-api-angular-starter-demo2 app is running!');
+    expect(page.getTitleText()).toEqual('grizzly-api-angular-starter app is running!');
   });
 
   afterEach(async () => {
