@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  grizzlyUrl : 'http://dwk5c1lsnem8l.cloudfront.net/runtime/5da9ec70705ff6000130ebe7'
 };
 
 /*
