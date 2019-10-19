@@ -13,7 +13,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'app',
+    path: 'home',
     component: HomeComponent,
     canActivate: [LoginActivate]
   }

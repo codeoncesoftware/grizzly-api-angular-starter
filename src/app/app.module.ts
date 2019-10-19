@@ -13,8 +13,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HomeModule } from './home/home.module';
 import { HttpGlobalInterceptor } from './http.interceptor';
 import { LoginActivate } from './login.guard';
-import { ProductsService } from './home/product/products.service';
-import { ProductResolve } from './home/product/product.resolver';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -29,12 +28,11 @@ import { ProductResolve } from './home/product/product.resolver';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    HomeModule
+    HomeModule,
+    FlexLayoutModule
   ],
   providers: [
     AuthService,
-    ProductsService,
-    ProductResolve,
     LoginActivate,
     {
       provide: HTTP_INTERCEPTORS,
