@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
         // Save Token in localStorage to inject in further HTTP Requests
         localStorage.setItem('grizzly-token', 'Bearer ' + res[token]);
         console.log(res[token]);
-        this.router.navigate(['app']);
+        this.router.navigate(['home']);
       }
     });
   }

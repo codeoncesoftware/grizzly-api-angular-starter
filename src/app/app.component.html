@@ -6,9 +6,13 @@
       <span style="vertical-align: super;padding-left: 10px;">Grizzly API Starter </span>
     </a>
   </div>
-  <span class="nav-tool-items">
+  <span class="nav-tool-items" *ngIf="!isConnected()">
     <a mat-button routerLink="login" routerLinkActive="active">Log in</a>
     <a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Register</a>
+  </span>
+  <span class="nav-tool-items" *ngIf="isConnected()">
+    <a mat-button routerLink="admin" routerLinkActive="active">Administration</a>
+    <a mat-button (click)="logout()">Log out</a>
   </span>
 </mat-toolbar>
 

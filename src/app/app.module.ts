@@ -3,42 +3,38 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './auth/login/login.component';
+
 
 import { CustomMaterialModule } from './core/material.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AuthService } from './auth/auth.service';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HomeModule } from './home/home.module';
-import { HttpGlobalInterceptor } from './http.interceptor';
-import { LoginActivate } from './login.guard';
+
+
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AuthModule } from './auth/auth.module';
+import { AdminComponent } from './admin/admin.component';
+import { EditUserComponent } from './admin/edit-user/edit-user.component';
+import { AdminModule } from './admin/admin.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    CustomMaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
+    AuthModule,
     HomeModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    CustomMaterialModule,
+    AdminModule
   ],
   providers: [
-    AuthService,
-    LoginActivate,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: HttpGlobalInterceptor,
-      multi: true
-    }
   ],
   bootstrap: [AppComponent]
 })

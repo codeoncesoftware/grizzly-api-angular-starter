@@ -1,0 +1,55 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>Register</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="example-form" name="form" #ff="ngForm">
+                <div class="example-container">
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="First Name" [(ngModel)]="user.firstname" name="firstname" required
+                            #firstname="ngModel">
+                        <mat-error *ngIf="firstname.touched && firstname.invalid">{{'required'}}</mat-error>
+                        <mat-icon matSuffix class="material-icons">perm_identity</mat-icon>
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Last Name" [(ngModel)]="user.lastname" name="lastname" required
+                            #lastname="ngModel">
+                        <mat-error *ngIf="lastname.touched && lastname.invalid">{{'required'}}</mat-error>
+                        <mat-icon matSuffix class="material-icons">perm_identity</mat-icon>
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Username" [(ngModel)]="user.username" name="username" required
+                            #username="ngModel">
+                        <mat-error *ngIf="username.touched && username.invalid">{{'required'}}</mat-error>
+                        <mat-icon matSuffix class="material-icons">perm_identity</mat-icon>
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <input email type="email" matInput placeholder="Email" [(ngModel)]="user.email" name="email"
+                            required #email="ngModel">
+                        <mat-error *ngIf="email.touched && email.invalid">{{'required'}}</mat-error>
+                        <mat-icon matSuffix class="material-icons">mail_outline</mat-icon>
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <input type="password" matInput placeholder="Password" [(ngModel)]="user.password"
+                            type="password" name="password" required #password="ngModel">
+                        <mat-error *ngIf="password.touched && password.invalid">{{'required'}}</mat-error>
+                        <mat-icon matSuffix class="material-icons">lock_outline</mat-icon>
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width">
+                        <input required matInput placeholder="Phone" [(ngModel)]="user.phone" name="phone"
+                            #phone="ngModel">
+                        <mat-error *ngIf="phone.touched && phone.invalid">{{'required'}}</mat-error>
+                        <mat-icon matSuffix class="material-icons">phone</mat-icon>
+                    </mat-form-field>
+                </div>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button (click)="signup()" color="primary" [disabled]="ff.form.invalid">Register</button>
+        </mat-card-actions>
+    </mat-card>
+
+</div>

@@ -13,6 +13,8 @@
                                 <input matInput placeholder="Username" [(ngModel)]="username" name="username" required
                                     #tUsername="ngModel">
                                 <mat-error *ngIf="tUsername.touched && tUsername.invalid">{{'required'}}</mat-error>
+                                <mat-hint>by default: admin</mat-hint>
+                                <mat-icon matSuffix class="material-icons">perm_identity</mat-icon>
                             </mat-form-field>
                         </td>
                     </tr>
@@ -22,11 +24,12 @@
                                 <input matInput placeholder="Password" [(ngModel)]="password" type="password"
                                     name="password" required #tPassword="ngModel">
                                 <mat-error *ngIf="tPassword.touched && tPassword.invalid">{{'required'}}</mat-error>
+                                <mat-hint>by default: admin</mat-hint>
+                                <mat-icon matSuffix class="material-icons">lock_outline</mat-icon>
                             </mat-form-field>
                         </td>
                     </tr>
                 </table>
-                <span>By default: username: admin, password: admin</span>
             </form>
         </mat-card-content>
         <mat-card-actions>

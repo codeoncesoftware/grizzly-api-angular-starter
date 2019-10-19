@@ -15,7 +15,8 @@ import {
         MatTableModule,
         MatMenuModule,
         MatIconModule,
-        MatProgressSpinnerModule
+        MatProgressSpinnerModule,
+        MatToolbarModule
     ],
     exports: [
         CommonModule,
@@ -27,7 +28,8 @@ import {
         MatTableModule,
         MatMenuModule,
         MatIconModule,
-        MatProgressSpinnerModule
+        MatProgressSpinnerModule,
+        MatToolbarModule
     ],
 })
 export class CustomMaterialModule { }
