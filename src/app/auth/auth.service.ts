@@ -12,6 +12,8 @@ import { Observable } from 'rxjs';
 
 export class AuthService {
 
+    connectedUser: User;
+
     constructor(private http: HttpClient, private router: Router) { }
 
     endpoint = environment.grizzlyUrl;
@@ -54,6 +56,14 @@ export class AuthService {
 
     me(): Observable<User> {
         return this.http.get<User>(this.endpoint + '/me');
+    }
+
+    getConnectedUser(): User {
+        return this.connectedUser;
+    }
+
+    setConnectedUser(user: User): void {
+        this.connectedUser = user;
     }
 
 }

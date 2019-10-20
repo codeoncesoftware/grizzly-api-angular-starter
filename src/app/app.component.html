@@ -11,8 +11,16 @@
     <a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Register</a>
   </span>
   <span class="nav-tool-items" *ngIf="isConnected()">
-    <a mat-button routerLink="admin" routerLinkActive="active">Administration</a>
-    <a mat-button (click)="logout()">Log out</a>
+    <span style="font-size: 14px; padding-right: 30px;">Welcome {{connectedUser()?.firstname}}
+      {{connectedUser()?.lastname}}</span>
+    <a *ngIf="isAdmin()" mat-button routerLink="admin" routerLinkActive="active">
+      <mat-icon aria-hidden="false" aria-label="Administration">dashboard</mat-icon>
+      Administration
+    </a>
+    <a mat-button (click)="logout()">
+      <mat-icon aria-hidden="false" aria-label="Administration">exit_to_app</mat-icon>
+      Log out
+    </a>
   </span>
 </mat-toolbar>
 

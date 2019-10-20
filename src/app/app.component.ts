@@ -9,6 +9,8 @@ import {
   Router
 } from '@angular/router';
 import { AuthService } from './auth/auth.service';
+import { User } from './auth/login/user';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +18,8 @@ import { AuthService } from './auth/auth.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  user: User;
 
   constructor(private loadingBar: SlimLoadingBarService, private router: Router, private authService: AuthService) {
     this.router.events.subscribe((event: Event) => {
@@ -25,6 +29,18 @@ export class AppComponent {
 
   private isConnected(): boolean {
     return this.authService.isConnected();
+  }
+
+  private connectedUser(): User {
+    return this.authService.getConnectedUser();
+  }
+
+  private isAdmin(): boolean {
+    if (!_.isEmpty(this.connectedUser())) {
+      const roles = this.connectedUser().roles;
+      return _.includes(roles, 'admin');
+    }
+    return false;
   }
 
   private logout(): void {

@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class AdminComponent implements OnInit {
 
-  displayedColumns: string[] = ['name', 'username', 'email', 'action'];
+  displayedColumns: string[] = ['name', 'username', 'email', 'enabled', 'actions'];
   dataSource: User[];
 
   constructor(private authService: AuthService, private router: Router) { }

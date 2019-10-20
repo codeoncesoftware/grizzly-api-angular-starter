@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  grizzlyUrl : 'http://dwk5c1lsnem8l.cloudfront.net/runtime/5da9ec70705ff6000130ebe7'
+  grizzlyUrl: 'http://dwk5c1lsnem8l.cloudfront.net/runtime/5dacf1f92bb59d00015e0aa6'
 };
 
 /*
