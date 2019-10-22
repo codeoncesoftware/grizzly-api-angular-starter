@@ -66,4 +66,10 @@ export class AuthService {
         this.connectedUser = user;
     }
 
+    activateUser(username: string): Observable<any> {
+        return this.http.post(this.endpoint + '/activate', {}, {
+            params: { username }
+        });
+    }
+
 }

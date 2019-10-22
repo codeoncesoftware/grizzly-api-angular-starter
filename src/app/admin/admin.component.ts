@@ -34,4 +34,11 @@ export class AdminComponent implements OnInit {
       });
   }
 
+  activateUser(user: User) {
+    this.authService.activateUser(user.username)
+      .subscribe(res => {
+        user.enabled = true;
+      });
+  }
+
 }

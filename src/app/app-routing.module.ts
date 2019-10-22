@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginActivate } from './auth/login/login.guard';
 import { RegisterComponent } from './auth/register/register.component';
 import { AdminComponent } from './admin/admin.component';
+import { EditUserComponent } from './admin/edit-user/edit-user.component';
 
 
 
@@ -29,6 +30,11 @@ const routes: Routes = [
     component: RegisterComponent,
     pathMatch: 'full'
   },
+  {
+    path: 'edit-user',
+    component: EditUserComponent,
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
