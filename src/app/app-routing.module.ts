@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginActivate } from './auth/login/login.guard';
 import { RegisterComponent } from './auth/register/register.component';
 import { AdminComponent } from './admin/admin.component';
-import { EditUserComponent } from './admin/edit-user/edit-user.component';
+import { ProfileComponent } from './auth/profile/profile.component';
 
 
 
@@ -31,8 +31,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'edit-user',
-    component: EditUserComponent,
+    path: 'profile',
+    component: ProfileComponent,
     pathMatch: 'full'
   }
 ];

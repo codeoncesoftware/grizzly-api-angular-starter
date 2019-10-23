@@ -23,10 +23,6 @@ export class AdminComponent implements OnInit {
       });
   }
 
-  editUser() {
-    this.router.navigate(['edit-user']);
-  }
-
   deleteUser(username) {
     this.authService.deleteUser(username)
       .subscribe(res => {

@@ -1,13 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EditUserComponent } from './edit-user/edit-user.component';
+import { ProfileComponent } from '../auth/profile/profile.component';
 
 const routes: Routes = [
-    {
-        path: 'edit-user/:username',
-        component: EditUserComponent,
-        pathMatch: 'full'
-    }
 ];
 
 @NgModule({

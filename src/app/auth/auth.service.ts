@@ -72,4 +72,10 @@ export class AuthService {
         });
     }
 
+    updateUser(user: User) {
+        return this.http.put(this.endpoint + '/updateuser', user, {
+            params: { username: user.username }
+        });
+    }
+
 }

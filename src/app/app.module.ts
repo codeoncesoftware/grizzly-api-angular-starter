@@ -14,7 +14,7 @@ import { HomeModule } from './home/home.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AuthModule } from './auth/auth.module';
 import { AdminComponent } from './admin/admin.component';
-import { EditUserComponent } from './admin/edit-user/edit-user.component';
+import { ProfileComponent } from './auth/profile/profile.component';
 import { AdminModule } from './admin/admin.module';
 
 
