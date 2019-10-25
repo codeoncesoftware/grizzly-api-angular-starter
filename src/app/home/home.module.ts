@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home.component';
-import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { HomeRoutingModule } from './home-routing.module';
@@ -10,7 +9,6 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
-        SlimLoadingBarModule,
         HomeRoutingModule,
         FormsModule,
         ReactiveFormsModule

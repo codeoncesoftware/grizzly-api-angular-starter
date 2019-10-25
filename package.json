@@ -23,7 +23,6 @@
     "@angular/platform-browser-dynamic": "~8.2.9",
     "@angular/router": "~8.2.9",
     "lodash": "^4.17.15",
-    "ng2-slim-loading-bar": "^4.0.0",
     "rxjs": "~6.4.0",
     "rxjs-compat": "^6.5.3",
     "tslib": "^1.10.0",

@@ -1,13 +1,12 @@
 import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HttpHeaders } from '@angular/common/http';
-import { Injector, Injectable } from '@angular/core';
-import { Router } from '@angular/router';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 
 export class HttpGlobalInterceptor implements HttpInterceptor {
 
-    constructor(private injector: Injector, private router: Router) { }
+    constructor() { }
 
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
@@ -19,5 +18,6 @@ export class HttpGlobalInterceptor implements HttpInterceptor {
         }
 
         return next.handle(request);
+
     }
 }
