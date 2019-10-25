@@ -23,7 +23,8 @@
         <th mat-header-cell *matHeaderCellDef> Actions </th>
         <td mat-cell *matCellDef="let user" class="action-link">
             <a [disabled]="user.enabled" mat-raised-button color="primary" (click)="activateUser(user)">Activate</a> |
-            <a mat-raised-button (click)="deleteUser(user.username)" color="warn">Delete</a>
+            <a [disabled]="user.username==='admin'" mat-raised-button (click)="deleteUser(user.username)"
+                color="warn">Delete</a>
         </td>
     </ng-container>
 

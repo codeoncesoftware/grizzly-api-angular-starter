@@ -12,8 +12,6 @@ import { environment } from '../../environments/environment';
 
 export class AuthService {
 
-    connectedUser: User;
-
     constructor(private http: HttpClient, private router: Router) { }
 
     endpoint = environment.grizzlyUrl;
@@ -34,7 +32,7 @@ export class AuthService {
     }
 
     logout() {
-        localStorage.removeItem('grizzly-token');
+        localStorage.clear();
         this.router.navigate(['/login']);
     }
 
@@ -59,11 +57,11 @@ export class AuthService {
     }
 
     getConnectedUser(): User {
-        return this.connectedUser;
+        return JSON.parse(localStorage.getItem('grizzly-user'));
     }
 
     setConnectedUser(user: User): void {
-        this.connectedUser = user;
+        localStorage.setItem('grizzly-user', JSON.stringify(user));
     }
 
     activateUser(username: string): Observable<any> {
