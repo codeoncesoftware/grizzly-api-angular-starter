@@ -3,9 +3,21 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
 It provides an easy way to start using [Grizzly API](https://www.grizzly-api.com)
 
-## Getting started
+# Getting started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+You can use our stakblitz (https://stackblitz.com/github/codeoncesoftware/grizzly-api-angular-starter) in just one click.
+
+or using [Angular CLI](https://github.com/angular/angular-cli)
+
+1. Go to project folder and install dependencies:
+ ```bash
+ npm install
+ ```
+ 
+2. Launch development server, and open `localhost:4200` in your browser:
+ ```bash
+ npm start
+ ```
 
 ## Further help
 
