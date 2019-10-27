@@ -1,7 +1,10 @@
 # Starter Kit for Angular Developers
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
-It provides an easy way to start using [Grizzly API](https://www.grizzly-api.com)
+
+It provides an easy way to start using [Grizzly API](https://www.grizzly-api.com) with OpenAPI.
+
+No SDK to learn, it's full Angular code, have fun !
 
 # Getting started
 
