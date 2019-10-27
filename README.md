@@ -5,7 +5,7 @@ It provides an easy way to start using [Grizzly API](https://www.grizzly-api.com
 
 # Getting started
 
-You can use our stakblitz (https://stackblitz.com/github/codeoncesoftware/grizzly-api-angular-starter) in just one click.
+You can use our [stakblitz](https://stackblitz.com/github/codeoncesoftware/grizzly-api-angular-starter) in just one click.
 
 or using [Angular CLI](https://github.com/angular/angular-cli)
 
@@ -21,4 +21,4 @@ or using [Angular CLI](https://github.com/angular/angular-cli)
 
 ## Further help
 
-To get more help on the Grizzly API please contact us support@grizzly-api.com or visit our website https://www.grizzly-api.com
+To get more help on the Grizzly API please contact us at support@grizzly-api.com or visit our website https://www.grizzly-api.com
