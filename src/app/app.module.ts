@@ -16,6 +16,9 @@ import { AuthModule } from './auth/auth.module';
 import { AdminComponent } from './admin/admin.component';
 import { ProfileComponent } from './auth/profile/profile.component';
 import { AdminModule } from './admin/admin.module';
+import { ProductComponent } from './product/product.component';
+import { ProductRoutingModule } from './product/product-routing.module';
+import { ProductModule } from './product/product.module';
 
 
 @NgModule({
@@ -32,7 +35,8 @@ import { AdminModule } from './admin/admin.module';
     HomeModule,
     FlexLayoutModule,
     CustomMaterialModule,
-    AdminModule
+    AdminModule,
+    ProductModule
   ],
   providers: [
   ],

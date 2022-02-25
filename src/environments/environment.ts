@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  grizzlyUrl: 'https://app.grizzly-api.com/runtime/6201ae441615636a09a5c0e9'
+  grizzlyUrl: 'https://app.grizzly-api.com/runtime/6214c5aa1da35156832fd6b2'
 };
 
 /*
